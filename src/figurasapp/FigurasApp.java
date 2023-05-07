@@ -19,9 +19,11 @@ public class FigurasApp {
         fig[0]=new Rectangulo(0,0, 5.0,2.0);
         fig[1]=new Circulo(0,0,3.0);
         fig[2]=new Cuadrado(0,0,8.0);
-        fig[3]=new Circulo(0,0,9.0);
+        fig[3]=new Circulo(9.0);
         Figura fMayor=figuraMayor(fig);
         System.out.println("El área mayor es: "+fMayor.area());
+        //La siguiente instrucción debe generar error:
+        Figura f= new Figura(0,0);
     }
     
     //determinar la figura que tiene el área mayor
